@@ -20,6 +20,7 @@
 		1AD7C9B01503D19D000142D6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AD7C9911503D19D000142D6 /* Foundation.framework */; };
 		1AD7C9B81503D19D000142D6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1AD7C9B61503D19D000142D6 /* InfoPlist.strings */; };
 		1AD7C9BB1503D19D000142D6 /* Homework1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AD7C9BA1503D19D000142D6 /* Homework1Tests.m */; };
+		1AD7C9C61503D268000142D6 /* Tweet.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AD7C9C51503D268000142D6 /* Tweet.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,21 +38,23 @@
 		1AD7C98F1503D19D000142D6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1AD7C9911503D19D000142D6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1AD7C9931503D19D000142D6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		1AD7C9971503D19D000142D6 /* Homework1-Info.plist */ = {isa = PBXFileReference; path = "Homework1-Info.plist"; sourceTree = "<group>"; };
+		1AD7C9971503D19D000142D6 /* Homework1-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Homework1-Info.plist"; sourceTree = "<group>"; };
 		1AD7C9991503D19D000142D6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1AD7C99B1503D19D000142D6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1AD7C99D1503D19D000142D6 /* Homework1-Prefix.pch */ = {isa = PBXFileReference; path = "Homework1-Prefix.pch"; sourceTree = "<group>"; };
-		1AD7C99E1503D19D000142D6 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		1AD7C99D1503D19D000142D6 /* Homework1-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Homework1-Prefix.pch"; sourceTree = "<group>"; };
+		1AD7C99E1503D19D000142D6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1AD7C99F1503D19D000142D6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		1AD7C9A21503D19D000142D6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		1AD7C9A41503D19D000142D6 /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		1AD7C9A41503D19D000142D6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		1AD7C9A51503D19D000142D6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		1AD7C9AC1503D19D000142D6 /* Homework1Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Homework1Tests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AD7C9AD1503D19D000142D6 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		1AD7C9B51503D19D000142D6 /* Homework1Tests-Info.plist */ = {isa = PBXFileReference; path = "Homework1Tests-Info.plist"; sourceTree = "<group>"; };
+		1AD7C9B51503D19D000142D6 /* Homework1Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Homework1Tests-Info.plist"; sourceTree = "<group>"; };
 		1AD7C9B71503D19D000142D6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		1AD7C9B91503D19D000142D6 /* Homework1Tests.h */ = {isa = PBXFileReference; path = Homework1Tests.h; sourceTree = "<group>"; };
+		1AD7C9B91503D19D000142D6 /* Homework1Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Homework1Tests.h; sourceTree = "<group>"; };
 		1AD7C9BA1503D19D000142D6 /* Homework1Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Homework1Tests.m; sourceTree = "<group>"; };
+		1AD7C9C41503D268000142D6 /* Tweet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tweet.h; sourceTree = "<group>"; };
+		1AD7C9C51503D268000142D6 /* Tweet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tweet.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,8 @@
 				1AD7C9A41503D19D000142D6 /* ViewController.h */,
 				1AD7C9A51503D19D000142D6 /* ViewController.m */,
 				1AD7C9961503D19D000142D6 /* Supporting Files */,
+				1AD7C9C41503D268000142D6 /* Tweet.h */,
+				1AD7C9C51503D268000142D6 /* Tweet.m */,
 			);
 			path = Homework1;
 			sourceTree = "<group>";
@@ -260,6 +265,7 @@
 				1AD7C99C1503D19D000142D6 /* main.m in Sources */,
 				1AD7C9A01503D19D000142D6 /* AppDelegate.m in Sources */,
 				1AD7C9A61503D19D000142D6 /* ViewController.m in Sources */,
+				1AD7C9C61503D268000142D6 /* Tweet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

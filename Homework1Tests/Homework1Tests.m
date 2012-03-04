@@ -7,14 +7,22 @@
 //
 
 #import "Homework1Tests.h"
+#import "Tweet.h"
 
-@implementation Homework1Tests
+@implementation Homework1Tests {
+    Tweet *testTweet1;
+    Tweet *testTweet2;
+}
 
 - (void)setUp
 {
     [super setUp];
     
     // Set-up code here.
+    testTweet1 = [[Tweet alloc] initWithContent:@"first tweet!"
+                                   withLatitude:5.0f
+                                  withLongitude:10.0f];
+    //testTweet2 = [[Tweet alloc] initWithContent:@"Second Tweet!"];
 }
 
 - (void)tearDown
@@ -26,7 +34,9 @@
 
 - (void)testExample
 {
-    STFail(@"Unit tests are not implemented yet in Homework1Tests");
+    //Tests to show tweets are not nil
+    STAssertNotNil(testTweet1,@"1st tweet is nil");
+    STASsertNotNil(testTweet2,@"2nd tweet is nil");
 }
 
 @end
