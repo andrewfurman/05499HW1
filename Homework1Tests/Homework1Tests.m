@@ -36,7 +36,11 @@
 {
     //Tests to show tweets are not nil
     STAssertNotNil(testTweet1,@"1st tweet is nil");
-    STASsertNotNil(testTweet2,@"2nd tweet is nil");
+    STAssertNotNil(testTweet2,@"2nd tweet is nil");
+    
+    //Test Default Values
+    STAssertEquals(testTweet1.latitude, 5.0f, @"Latitude should be 5");
+    STAssertEquals(testTweet1.longitude, 10.0f,@"Longitude should be 10");
 }
 
 @end
