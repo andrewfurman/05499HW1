@@ -27,6 +27,9 @@
           withLatitude:(double)latitude
           andLongitude:(double)longitude {
     if (self = [super init]) {
+        if(content.length > 140){
+            return nil;
+        }
         _content = content;
         _latitude = latitude;
         _longitude = longitude;

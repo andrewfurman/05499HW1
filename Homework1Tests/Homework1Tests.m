@@ -12,6 +12,9 @@
 @implementation Homework1Tests {
     Tweet *testTweet1;
     Tweet *testTweet2;
+    Tweet *shortTweet;
+    Tweet *longTweet;
+    Tweet *perfectTweet;
 }
 
 - (void)setUp
@@ -23,6 +26,10 @@
                                    withLatitude:5.0f
                                    andLongitude:10.0f];
     testTweet2 = [[Tweet alloc] initWithContent:@"Second Tweet!"];
+    
+    shortTweet = [[Tweet alloc] initWithContent:@"this tweet is 141 characters long wrgergerigeoirgioejrgiojergijerigjeorigjoeirjgoiegiowefijwefijweiofjwoiejfoiwejfiowejfoiwefjwioefjwioefji"];
+    perfectTweet = [[Tweet alloc] initWithContent:@"this tweet is 141 characters long wrgergerigeoirgioejrgiojergijerigjeorigjoeirjgoiegiowefijwefijweiofjwoiejfoiwejfiowejfoiwefjwioefjwioefjio"];
+    longTweet = [[Tweet alloc] initWithContent:@"this tweet is 141 characters long wrgergerigeoirgioejrgiojergijerigjeorigjoeirjgoiegiowefijwefijweiofjwoiejfoiwejfiowejfoiwefjwioefjwioefjiow"];
 }
 
 - (void)tearDown
@@ -66,6 +73,13 @@
     STAssertEquals([expectedComponents2 day], [actualComponents2 day],@"The days are equal");
     STAssertEquals([expectedComponents2 month], [actualComponents2 month],@"The days are equal");
     STAssertEquals([expectedComponents2 year], [actualComponents2 year],@"The days are equal");
+}
+
+- (void)tweetLengthTest
+{
+    STAssertNotNil(shortTweet,@"This short tweet should not be nil");
+    STAssertNotNil(shortTweet,@"This 140 char tweet should not be nil");
+    STAssertNil(longTweet,@"This tweet should be nil");
     
 }
 
