@@ -17,9 +17,9 @@
 
 + (double) defaultLat;
 + (double) defaultLon;
-- (id) initWithContent:(NSString*) content
-          withLatitude:(double) latitude
-         withLongitude:(double) longitude;
-- (id) initWithContent:(NSString*) content;
+- (id) initWithContent:(NSString*)content
+          withLatitude:(double)latitude
+          andLongitude:(double)longitude;
+- (id) initWithContent:(NSString*)content;
 
 @end

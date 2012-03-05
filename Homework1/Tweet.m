@@ -23,7 +23,7 @@
     return 1.0f;
 }
 
-- (id) initWithContent:(NSString*) content
+- (id) initWithContent:(NSString*)content
           withLatitude:(double)latitude
           andLongitude:(double)longitude {
     if (self = [super init]) {
@@ -35,7 +35,7 @@
     return self;
 }
 
-- (id) initWithContent:(NSString*) content {
+- (id) initWithContent:(NSString*)content {
     return [self initWithContent:content
                     withLatitude:[Tweet defaultLat] 
                     andLongitude:[Tweet defaultLon]];
