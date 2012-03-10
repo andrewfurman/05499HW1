@@ -51,4 +51,11 @@
     _latitude = latitude;
 }
 
+- (void)setLongitude:(double)longitude
+{
+    if(longitude > 90.0 || longitude < -90.0)
+        return;
+    _longitude = longitude;
+}
+
 @end
