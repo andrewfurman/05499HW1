@@ -11,8 +11,8 @@
 @interface Tweet : NSObject
 
 @property (readwrite, strong) NSString* content;
-@property (readwrite) double latitude;
-@property (readwrite) double longitude;
+@property (nonatomic, readwrite) double latitude;
+@property (nonatomic, readwrite) double longitude;
 @property (readwrite, strong) NSDate* timestamp;
 
 + (double) defaultLat;

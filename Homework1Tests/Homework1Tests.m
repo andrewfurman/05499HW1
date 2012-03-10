@@ -29,7 +29,7 @@
     
     shortTweet = [[Tweet alloc] initWithContent:@"this tweet is 141 characters long wrgergerigeoirgioejrgiojergijerigjeorigjoeirjgoiegiowefijwefijweiofjwoiejfoiwejfiowejfoiwefjwioefjwioefji"];
     perfectTweet = [[Tweet alloc] initWithContent:@"this tweet is 141 characters long wrgergerigeoirgioejrgiojergijerigjeorigjoeirjgoiegiowefijwefijweiofjwoiejfoiwejfiowejfoiwefjwioefjwioefjio"];
-    longTweet = [[Tweet alloc] initWithContent:@"this tweet is 141 characters long wrgergerigeoirgioejrgiojergijerigjeorigjoeirjgoiegiowefijwefijweiofjwoiejfoiwejfiowejfoiwefjwioefjwioefjiow"];
+    longTweet = [[Tweet alloc] initWithContent:@"this tweet is 141 characters long wrgergerigeoirgioejrgiojergijerigjeorigjoeirjgoiegiowefijwefijweiofjwoiejfoiwejfiowejfoiwefjwioefjwioefjioo"];
 }
 
 - (void)tearDown
@@ -75,12 +75,24 @@
     STAssertEquals([expectedComponents2 year], [actualComponents2 year],@"The days are equal");
 }
 
-- (void)tweetLengthTest
+- (void)testTweetLength
 {
     STAssertNotNil(shortTweet,@"This short tweet should not be nil");
     STAssertNotNil(shortTweet,@"This 140 char tweet should not be nil");
     STAssertNil(longTweet,@"This tweet should be nil");
+}
+
+- (void)testlatLon
+{
+    testTweet1.latitude = 190.0;
+    STAssertEquals(testTweet1.latitude, (double)5.0f, @"Setting a valid latitude didn't work");
+    testTweet1.latitude = 90.1f;
+    STAssertEquals(testTweet1.latitude, (double)5.0f, @"Setting an improper value worked");
     
+    testTweet1.longitude = 31.0f;
+    STAssertEquals(testTweet1.longitude, (double)31.0f, @"Setting a valid latitude didn't work");
+    testTweet1.longitude = 180.1f;
+    STAssertEquals(testTweet1.longitude, (double)31.0f, @"Setting an improper value worked");
 }
 
 @end

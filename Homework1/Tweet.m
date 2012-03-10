@@ -44,4 +44,11 @@
                     andLongitude:[Tweet defaultLon]];
 }
 
+- (void)setLatitude:(double)latitude
+{
+    if(latitude > 90.0 || latitude < -90.0)
+        return;
+    _latitude = latitude;
+}
+
 @end
